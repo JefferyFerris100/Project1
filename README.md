@@ -35,12 +35,13 @@ Metricbeat records data from the system and services running on the server.
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1.  | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name       | Function                               | IP Address      | Operating System |
+|------------|----------------------------------------|-----------------|------------------|
+| Jump-Box   | Gateway w/Ansible                      |52.255.185.190   | Linux            |
+| VM-jaf     | Hosts Elk Stack                        |20.94.29.144     | Linux            |
+| VM-Web-1   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.5         | Linux            |
+| VM-Web-2   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.6         | Linux            |
+| VM-Web-3   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.7         | Linux            |
 
 ### Access Policies
 
@@ -54,13 +55,13 @@ The Jump-Box-Provisioner with IP: 55.255.85.190 has access to the ELK virtual ma
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump-Box | Yes                 | 10.0.0.0/16          |
-| VM-WEB-1 | No                  |                      |
-| VM-WEB-2 | No                  |                      |
-| VM-WEB-3 | No                  |                      |
-| VM-ELK   | No                  |                      |
+| Name         | Publicly Accessible | Allowed IP Addresses |
+|--------------|---------------------|----------------------|
+| Jump-Box     | Yes                 | 10.0.0.0/16          |
+| VM-Web-1     | No                  |                      |
+| VM-Web-2     | No                  |                      |
+| VM-Web-3     | No                  |                      |
+| VM-jaf-Elk   | No                  |                      |
 
 
 ### Elk Configuration
@@ -70,9 +71,12 @@ Ansible automation tool allows easy configuration of servers with software deplo
 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install docker.io
+- Install python3-pip
+- Install docker module
+- Increase virtual memory
+- Download and launch a docker elk container
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
