@@ -12,7 +12,8 @@ This document contains the following details:
 - Description of the Topologu
 - Access Policies
 - ELK Configuration
-  - Beats in Use
+  - Beats in Use[Data](/Users/jefferyferris/Desktop/filebeat-playbook.png)
+               
   - Machines Being Monitored
 - How to Use the Ansible Build
 
