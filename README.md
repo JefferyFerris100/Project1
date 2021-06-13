@@ -6,8 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-https://github.com/JefferyFerris100/Project1-06-02-21/blob/main/Ansible
-  
+
 
 This document contains the following details:
 - Description of the Topologu
@@ -104,13 +103,13 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://20.94.49.144:5601/ to check that the installation worked as expected.
 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-For Filebeat:
-curl -o https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.                                           
+For Filebeat:                                                                                                                                                       
+curl -o https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml                                                                                                                                                          
 filebeat-playbook:
 
 
-For Metricbeat:
-curl -o https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml 
+For Metricbeat:                                                                                                                                                      
+curl -o https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml                                                                                                                                   
 metricbeat-playbook:
 
