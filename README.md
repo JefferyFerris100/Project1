@@ -38,7 +38,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name       | Function                               | IP Address      | Operating System |
 |------------|----------------------------------------|-----------------|------------------|
 | Jump-Box   | Gateway w/Ansible                      |52.255.185.190   | Linux            |
-| VM-jaf     | Hosts Elk Stack                        |20.94.29.144     | Linux            |
+| VM-jaf     | Hosts Elk Stack                        |20.94.49.144     | Linux            |
 | VM-Web-1   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.5         | Linux            |
 | VM-Web-2   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.6         | Linux            |
 | VM-Web-3   | Hosts Docker w/ Filebeat & Metricbeat  |10.0.0.7         | Linux            |
