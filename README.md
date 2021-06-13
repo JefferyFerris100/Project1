@@ -61,7 +61,7 @@ A summary of the access policies in place can be found in the table below.
 | VM-Web-1     | No                  |                      |
 | VM-Web-2     | No                  |                      |
 | VM-Web-3     | No                  |                      |
-| VM-jaf-Elk   | No                  |                      |
+| VM-jaf-server| Yes                 |                      |
 
 
 ### Elk Configuration
@@ -92,20 +92,25 @@ We have installed the following Beats on these machines:
 Filebeat and Metricbeat 
 
 These Beats allow us to collect the following information from each machine:                                                                                         
-Filebeat monitors the log files and collect log events from the server then sends the data to logstash which can show any changes to a file.
-Metricbeat collects data from the operating system and services then sends it to logstach which can show software, like Apache, for any updates,changes etc..
+Filebeat monitors the log files and collects log events from the server then sends the data to logstash which can show any changes to a file.
+Metricbeat collects data from the operating system and services from the server then sends it to logstach which can show software, like Apache, for any updates,changes etc..
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the filebeat-playbook.yml and metricbeat-playbook.yml file to /etc/ansible/roles
+- Update the /etc/ansible/hosts file to include Web servers IP adresses(10.0.0.5, 10.0.0.6, 10.0.0.7)under "Webservers" and Elk server (10.1.0.4) under "ElK" group
+- Run the playbook, and navigate to http://20.94.49.144:5601/ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+For Filebeat:
+curl -o https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+filebeat-playbook:
+
+
+For Metricbeat:
+curl -o https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml 
+metricbeat-playbook:
+
