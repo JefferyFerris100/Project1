@@ -12,7 +12,7 @@ This document contains the following details:
 - Description of the Topologu
 - Access Policies
 - ELK Configuration
-  - Beats in Use[Data](/Users/jefferyferris/Desktop/filebeat-playbook.png)
+  - Beats in Use[Data](https://github.com/JefferyFerris100/Project1/blob/main/Ansible#L3)
                
   - Machines Being Monitored
 - How to Use the Ansible Build
