@@ -29,7 +29,7 @@ Load balancing ensures that the application will be highly deliverable, in addit
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system applications.
 Filebeat watches log data and collects log events from the server.
-Metricbeat records data from the system and services running on the server.
+Metricbeat records data from the operating system and services running on the server.
 
 
 The configuration details of each machine may be found below.
@@ -91,9 +91,9 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 Filebeat and Metricbeat 
 
-These Beats allow us to collect the following information from each machine:
-Filebeat monitors the log files and collect log events and
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+These Beats allow us to collect the following information from each machine:                                                                                         
+Filebeat monitors the log files and collect log events from the server then sends the data to logstash which can show any changes to a file.
+Metricbeat collects data from the operating system and services then sends it to logstach which can show software, like Apache, for any updates,changes etc..
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
