@@ -13,7 +13,7 @@ This document contains the following details:
 - Access Policies
 - ELK Configuration [ELK Data](https://github.com/JefferyFerris100/Project1/blob/main/elk-playbook.png)  
 - Beats in Use [Filebeat Data](https://github.com/JefferyFerris100/Project1/blob/main/filebeat-playbook.png)                                                       
-               [Metricbeat Data](https://github.com/JefferyFerris100/Project1/blob/main/metricbeat-playbook.png)               
+                       [Metricbeat Data](https://github.com/JefferyFerris100/Project1/blob/main/metricbeat-playbook.png)               
 - Machines Being Monitored
 - How to Use the Ansible Build
 
