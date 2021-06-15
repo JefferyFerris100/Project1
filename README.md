@@ -116,5 +116,4 @@ filebeat-playbook:[Filebeat Data](https://github.com/JefferyFerris100/Project1/b
 
 For Metricbeat:                                                                                                                                                      
 curl -o https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml                                                                                                                                   
-metricbeat-playbook:
-
+metricbeat-playbook:[Metricbeat Data](https://github.com/JefferyFerris100/Project1/blob/main/metricbeat-playbook.png)
