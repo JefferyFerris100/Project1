@@ -102,6 +102,8 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml file to /etc/ansible/roles
 - Update the /etc/ansible/hosts file to include Web servers IP adresses(10.0.0.5, 10.0.0.6, 10.0.0.7)under "Webservers" and Elk server (10.1.0.4) under "ElK" group
 - Run the playbook, and navigate to http://20.94.49.144:5601/ to check that the installation worked as expected.
+ 
+ [Filebeat Logs](https://github.com/JefferyFerris100/Project1/blob/main/Filebeat-logs.png)
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.                                           
