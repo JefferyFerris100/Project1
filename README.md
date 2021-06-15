@@ -6,13 +6,13 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-
+[Project1 Data](https://github.com/JefferyFerris100/Project1)
 
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
 - ELK Configuration [ELK Data](https://github.com/JefferyFerris100/Project1/blob/main/elk-playbook.png)  
-- Beats in Use [Filebeat Data](https://github.com/JefferyFerris100/Project1/blob/main/filebeat-playbook.png)
+- Beats in Use [Filebeat Data](https://github.com/JefferyFerris100/Project1/blob/main/filebeat-playbook.png)                                                       
                [Metricbeat Data](https://github.com/JefferyFerris100/Project1/blob/main/metricbeat-playbook.png)               
 - Machines Being Monitored
 - How to Use the Ansible Build
