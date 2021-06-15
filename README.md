@@ -11,10 +11,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
-- ELK Configuration [Data](https://github.com/JefferyFerris100/Project1/blob/main/elk-playbook.png)  
+- ELK Configuration [ELK Data](https://github.com/JefferyFerris100/Project1/blob/main/elk-playbook.png)  
 - Beats in Use [Filebeat Data](https://github.com/JefferyFerris100/Project1/blob/main/filebeat-playbook.png)
-               
-  - Machines Being Monitored
+               [Metricbeat Data](https://github.com/JefferyFerris100/Project1/blob/main/metricbeat-playbook.png)               
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 
